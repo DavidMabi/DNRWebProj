@@ -19,3 +19,16 @@ body{
     background-size: 100% 100%;
 }
 .Form{border: 1px solid;}
+
+@media screen and  (max-height: 439px){
+    
+   .container{
+       margin-top: 0;
+       height: 500px;
+   }
+  }
+  @media screen and (max-width: 650px) {
+  .container{
+      border: 1px solid red;
+   }
+  }
