@@ -18,17 +18,38 @@ body{
     background-image: url("../image/bg.jpg");
     background-size: 100% 100%;
 }
+.floatingInput{
+    margin-top: 50px;
+}
 .Form{border: 1px solid;}
-
+.form-control{
+    border-radius: 20px ;
+}
 @media screen and  (max-height: 439px){
     
    .container{
        margin-top: 0;
-       height: 500px;
+       height: 450px;
+   }
+   .img{
+       height: 100%;
+   }
+   .form{
+       height: 100%;
+   }
+   .Form h1{
+       font-size: 40px;
+   }
+   .floatingInput{
+       margin-top: 20px;
+   }
+   #checkbox1{
+       margin-left:10px;
    }
   }
-  @media screen and (max-width: 650px) {
-  .container{
-      border: 1px solid red;
-   }
-  }
+ @media screen and (max-width: 960px) {
+     .container{
+         height: 540px;
+     }
+    
+ }
