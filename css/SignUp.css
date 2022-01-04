@@ -7,7 +7,7 @@ body{
 }
 .container{
     border:1px  solid black;
-    height: 590px;
+    height: 690px;
     width: 1100px;
     margin-top:100px;
 }
@@ -19,7 +19,7 @@ body{
     background-size: 100% 100%;
 }
 
-.floatingInput{
+.FullName   {
     margin-top: 50px;
 }
 .Form{border-right: 1px solid;}
@@ -54,3 +54,16 @@ body{
      }
     
  }
+ body {
+    animation: transitionIn 1.5s;
+}
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+  }
+}
