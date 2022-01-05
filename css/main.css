@@ -2,3 +2,21 @@
     margin: 0;
     padding: 0;
 }
+.Display1,.Display2,.Display3{
+    height: 300px;
+}
+.Display1{
+    background-image: url("../image/Mens/DgT.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.Display2{
+    background-image: url("../image/Womens/Dblack.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.Display3{
+    background-image: url("../image/coming/jp-c1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
