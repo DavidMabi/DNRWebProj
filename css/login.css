@@ -50,9 +50,9 @@ body{
   }
  @media screen and (max-width: 960px) {
      .container{
-         height: 540px;
+         height: 570px;
      }
-    
+
  }
  body {
     animation: transitionIn 1.5s;
