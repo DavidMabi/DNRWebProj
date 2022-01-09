@@ -9,7 +9,7 @@ body {
 }
 
 
-/* for the image*/
+/* for the card*/
 .imgcontainer{
     overflow: hidden;
     margin: 0 auto;
@@ -38,28 +38,73 @@ body {
 .imgcontainer:hover +.centered{
      font-size: 45px;
 }
-/*for the image*/
+/*for the card*/
 
 
 
-/*for the animation*/
+/*for the screen size*/
 @media screen and (max-width: 973px) {
     
     .img{
         height: 300px;
     }
+    .card-title{
+        font-size: 20px;
+    }
     .card-body{
-        height: 175px;
+        height: 210px;
     }
 }
-@media screen and (max-width:317px) {
+@media screen and (max-width: 760px) {
+    .centered {
+        font-size: 15px;
+    }
+    .card{
+        width: 170px;
+    }
+    .card-title{
+        font-size: 20px;
+    }
+    .card-text{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:641px) {
     .img{
         height: 100px;
     }
     .card-body{
-        height: 105px;
+        height: 190px;
+    }
+    .card-text{
+        font-size: x-small  ;
+    }
+    p+a{
+        font-size: 1px;
     }
 }
+@media screen and (max-width:575px) {
+    .col{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 500px) {
+    .col{
+        display: flex;
+        justify-content: center;
+    }
+    .card{
+        width: 250px;
+    }
+    .imgcontainer{
+        height: 300px;
+    }
+    .card-body{
+        height:140px;
+    }
+}
+/*for the animation*/
 @keyframes transitionIn {
     from {
         opacity: 0;
