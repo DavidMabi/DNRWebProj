@@ -40,11 +40,11 @@ body {
 }
 /*for the card*/
 
-
-
 /*for the screen size*/
 @media screen and (max-width: 973px) {
-    
+    .containere-fluid{
+
+    }
     .img{
         height: 300px;
     }
@@ -69,7 +69,7 @@ body {
         font-size: 14px;
     }
 }
-@media screen and (max-width:641px) {
+@media screen and (max-width:649px) {
     .img{
         height: 100px;
     }
@@ -89,7 +89,7 @@ body {
         justify-content: center;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 538px) {
     .col{
         display: flex;
         justify-content: center;
