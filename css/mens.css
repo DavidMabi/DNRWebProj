@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+col{
+
+}
+.col .card{
+    border: solid;
+    width: 300px;
+}
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
