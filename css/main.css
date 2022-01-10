@@ -42,9 +42,7 @@ body {
 
 /*for the screen size*/
 @media screen and (max-width: 973px) {
-    .containere-fluid{
-
-    }
+    
     .img{
         height: 300px;
     }
@@ -84,24 +82,52 @@ body {
     }
 }
 @media screen and (max-width:575px) {
-    .col{
-        display: flex;
-        justify-content: center;
+    .row  .col{
+        width: 32vw;
+    }
+    .btn{
+        font-size: 14px;
+    }
+    .imgcontainer:hover +.centered{
+         font-size: 20px;
     }
 }
 @media screen and (max-width: 538px) {
-    .col{
-        display: flex;
-        justify-content: center;
+    .row  .col{
+        width: 32vw;
     }
-    .card{
-        width: 250px;
+    .btn{
+        font-size: 14px;
     }
-    .imgcontainer{
-        height: 300px;
+    .imgcontainer:hover +.centered{
+         font-size: 20px;
     }
-    .card-body{
-        height:140px;
+}
+@media screen and (max-width:500px) {
+    .row  .col{
+        width: 35vw;
+    }
+    .btn{
+        font-size: 14px;
+    }
+    .imgcontainer:hover +.centered{
+         font-size: 18px;
+    }
+}
+@media screen and (max-width:375px) {
+    .row  .col{
+        width: 32vw;
+        border: solid;
+    }
+    .row .col > .card +img{
+        border: solid;
+        
+    }
+    .btn{
+        font-size: 14px;
+    }
+    .imgcontainer:hover +.centered{
+         font-size: 20px;
     }
 }
 /*for the animation*/
