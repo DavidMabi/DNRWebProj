@@ -7,15 +7,18 @@
 body {
     animation: transitionIn 1s;
 }
-
-.navbar{
-    background-color: #cc0000;
+.nav-item .nav-link{
+    letter-spacing: 3px;
+}
+.container-md .logo{
+    letter-spacing: 10px;
+    
 }
 .card{
     width: 300px;
 }
 .text{
-    -webkit-user-select: none;-
+    -webkit-user-select: none;
 }
 .text h1{
     font-family: "Old Standard TT",sans-serif;
