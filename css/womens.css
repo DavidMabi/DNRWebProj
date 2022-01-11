@@ -13,7 +13,9 @@ body {
     letter-spacing: 3px;
     font-family: "Poppins",sans-serif;
 }
-    
+nav.stroke ul li a:hover{
+    border: solid;
+}
 .container-md span{
     letter-spacing: 10px;
     font-family: 'Poppins',sans-serif;

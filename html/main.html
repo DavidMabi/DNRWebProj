@@ -10,11 +10,10 @@
 </head>
 <body>
   
-   <!--Navbar-->
-  <nav class="navbar navbar-expand-md mt-1 border-bottom navbar-light " >
+  <nav class="navbar navbar-expand-md mt-1 border-bottom navbar-light stroke " >
     <div class="container-md" >
       <a href="../html/main.html" class="navbar-brand justify-star col">
-      <span class="text-dark logo"> DNR</span>
+      <span class=" fs-2 logo text-dark-danger">DNR</span>
      </a>
      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
      data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
@@ -24,10 +23,10 @@
             <div class="collapse navbar-collapse justify-content-center col " id="main-nav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                   <a class="nav-link fs-4 border text-dark" href="../html/main.html">Home</a>
+                   <a class="nav-link fs-4 text-dark border " href="../html/main.html">Home</a>
                  </li>
                  <li class="nav-item">
-                   <a class="nav-link fs-4 text-dark" href="../html/mens.html">Mens</a>
+                   <a class="nav-link fs-4 text-dark  " href="../html/mens.html">Mens</a>
                  </li>
                  <li class="nav-item">
                    <a class="nav-link fs-4 text-dark" href="../html/womens.html">Womens</a>
@@ -44,6 +43,7 @@
             
     </div>
   </nav>
+
     <!-- Carousel-->
 <div class="container-fluid">
   <div class="bd-example">
@@ -74,44 +74,37 @@
 </div>
 </div>
   <!--images-->
-  <div class="album py-5 bg-light">
-    <div class="container">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-sm-3 g-3  justify-content-center " >
-        <div class="col "><!--1st col-->
-          <div class="card ">
-            <a href="../html/mens.html" class="text-dark text-decoration-none">
-                  <div class="imgcontainer">
-                          <img src="../image/Mens/BLT.jpeg" class="card-img-top" alt="...">
-                  </div>
-          
-                  <div class="centered ">Men's wear</div></a>
-                  <div class="card-body">
-                    <h5 class="card-title text-danger ">Passion for fashion!</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="../html/mens.html" class="btn btn-primary">Go somewhere</a>
-                  </div>
-              
-          </div>
-        </div><!--1st col-->
-        <div class="col "><!--2nd col-->
-          <div class="card">
-            <a href="../html/womens.html" class="text-dark text-decoration-none">
-                  <div class="imgcontainer">
-                          <img src="../image/Womens/Dblack.jpeg" class="card-img-top" alt="...">
-                  </div>
-                  <div class="centered">Women's wear</div></a>
-                  <div class="card-body">
-                    <h5 class="card-title text-danger ">Fashion is my drug</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-              
-          </div>
-      </div><!--2nd col-->
-      </div>
+  <div class="container mt-5 ">
+    <div class="row justify-content-center "><!--start of row-->
+    <div class="col">
+      <a href="../html/mens.html" class="text-decoration-none text-dark">
+      <div class="card " style="width: 18rem; float: right;">
+        <div class="imgcontainer">
+            <img src="../image/Mens/BLT.jpeg" class="card-img-top img-responsive" alt="...">
+        </div>
+        <div class="centered">Men's wear</div>
+        <div class="card-body">
+          <p class="card-text">Men's most finest Clothing in the <span class="text-danger ">Market</span></p>
+          <a href="../html/mens.html" class="btn btn-primary mt-3">Go somewhere</a>
+        </div>
+    </div></a>
     </div>
-  </div>
-  
+   <div class="col mb-3">
+     <a href="../html/womens.html" class="text-decoration-none text-dark">
+    <div class="card" style="width:  18rem;">
+      <div class="imgcontainer">
+          <img src="../image/Womens/Dblack.jpeg" class="card-img-top img-responsive" alt="...">
+      </div>
+              <div class="centered">Women's wear</div>
+      <div class="card-body">
+        <p class="card-text">Men's most finest Clothing in the <span class="text-danger ">Market</span></p>
+        <a href="../html/womens.html" class="btn btn-primary mt-3">Go somewhere</a>
+      </div>
+    </div></a>
+   </div>
+
+   
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
 
