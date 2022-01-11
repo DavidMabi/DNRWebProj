@@ -1,4 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
+}
+.card{
+    width: 300px;
+}
+.text h1{
+    font-family: "Old Standard TT",sans-serif;
+}
+.text p{
+    font-family: "Oswald",sans-serif;
+    letter-spacing: 5px;
 }
