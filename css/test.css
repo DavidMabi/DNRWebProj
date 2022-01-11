@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -18,7 +19,12 @@ body {
     letter-spacing: 10px;
     font-family: 'Poppins',sans-serif;
 }
-
+.imgprod{
+    height: 600px;
+}
+.imgprod .card-img-top{
+    height: 100%;
+}
 .text{
     -webkit-user-select: none;
 }
@@ -28,33 +34,4 @@ body {
 .text p{
     font-family: "Oxygen",sans-serif;
     letter-spacing: 5px;
-}
-.imgprod{
-    height: 600px;
-}
-.imgprod .card-img-top{
-    height: 100%;
-}
-#onhover {
-    display: none;
-    animation: transitionIn 1s;
-  }
-  #surround:hover span[id="initial"] {
-    display: none;
-    animation: transitionIn 1s;
-  }
-  #surround:hover span[id="onhover"] {
-    display: block;
-    animation: transitionIns;
-  }
-/*for the animation*/
-@keyframes transitionIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-  }
 }

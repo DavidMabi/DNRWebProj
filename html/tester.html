@@ -4,89 +4,173 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">   
+    <link rel="stylesheet" href="../css/test.css">
+    
+    <title>DNR</title>
 
-    <title>Document</title>
+
+
     <style>
-    .col{
-      border: solid blue;
-    }
-    .card{
-      border: solid red;
-      height: 60vh;
-      width: 30vh;
-    }
-       .imgcontainer{
-    overflow: hidden;
-    margin: 0 auto;
-    }
-    .imgcontainer img {
-    width: 100%;
-    transition: 0.5s all ease-in-out;
-    }
-    .imgcontainer:hover img {
-    transform: scale(1.5);
-    filter: brightness(50%);
-    }
-.centered {
-    pointer-events: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:white;
-    font-family: "Montserrat",serif;
-    font-size:40px;
-    text-shadow: 2px 2px 4px #000000;
-    text-align: center;
-    transition: 1s;
-    }
-    .imgcontainer:hover +.centered{
-     font-size: 45px;
-    }
-    img{
-  width:100%;
-  height:auto;
-}
-.imgcontainer{
-  width:100%;
-  height:50vh;
-}
+
     </style>
 </head>
 <body>
-    
+    <!--Navbar-->
+  <nav class="navbar navbar-expand-md mt-1 border-bottom navbar-light " >
+    <div class="container-md" >
+      <a href="../html/main.html" class="navbar-brand justify-star col">
+      <span class=" fs-2 logo text-dark-danger">DNR</span>
+     </a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+     data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+     aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse justify-content-center col " id="main-nav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                   <a class="nav-link fs-4 text-dark " href="../html/main.html">Home</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link fs-4 text-dark border " href="../html/mens.html">Mens</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link fs-4 text-dark" href="../html/womens.html">Womens</a>
+                 </li>
+                <li class="nav-item ">
+                   <a class="nav-link fs-4 text-dark" href="#">Contact</a>
+                 </li>
+                 
+            </div>
+            <div class="collapse navbar-collapse justify-content-end col">
+              <a href="../html/login.html" class="text-white text-decoration-none"><button class="btn btn-primary ">Log in</button></a> &nbsp;
+              <a href="../html/SignUp.html" class="text-dark text-decoration-none"><button class="btn btn-outline-primary ">Sign In</button></a>
+            </div>
+            
+    </div>
+  </nav>
 
-    <div class="container mt-5  border">
-        <div class="row justify-content-center "><!--start of row-->
-        <div class="col w-25cc">
-          <div class="card " >
-            <div class="imgcontainer">
-                <img src="../image/Mens/BLT.jpeg" class="card-img-top img-responsive" alt="...">
-            </div>
-            <div class="centered">Men's wear</div>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        </div>
-       <div class="col">
-        <div class="card" >
-          <div class="imgcontainer">
-              <img src="../image/Womens/Dblack.jpeg" class="card-img-top img-responsive" alt="...">
+  
+  <div class="container mt-5"> <!--Start of container-->
+    <div class="mb-5 text  p-5"> 
+      <h1 class="display-1 text-center p-5 pb-1 ">Men's Wear</h1>
+      <p class="text-center fs-5">Men's most finest Clothing in the <span class="text-danger ">Market</span></p>
+    </div>
+    
+    <div class="row row-cols-xl-3 row-cols-sm-2 row-cols-xl-2 row-cols-2">
+
+
+      <div class=" col mb-3">
+        <div class="card">
+          <div class="imgprod">
+            <img src="../image/Mens/BLT.jpeg" class="card-img-top" alt="BLT">
           </div>
-                  <div class="centered">Women's wear</div>
+          <div class="card-body border-top">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex align-items-stretch mb-3" >
+        <div class="card">
+          <div class="imgprod">
+            <img src="../image/Mens/BT.jpeg" class="card-img-top " alt="BT" class="img-responsive">
+          </div>
+          
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           </div>
         </div>
-       </div>
-
+      </div>
+      <div class="col-lg-4 d-flex align-items-stretch mb-3">
+        <div class="card">
+          <div class="imgprod">
+            <img src="../image/Mens/GT.jpeg" class="card-img-top" alt="GT">
+          </div>
+          
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex align-items-stretch mb-3">
+        <div class="card">
+          <div class="imgprod">
+            <img src="../image/Mens/DgT.jpeg" class="card-img-top" alt="...">
+          </div>
+         
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex align-items-stretch mb-3">
+        <div class="card">
+          <div class="imgprod">
+            <img src="../image/Mens/GT.jpeg" class="card-img-top" alt="...">
+          </div>
+          
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex align-items-stretch mb-3">
+        <div class="card">
+          <div class="imgprod">
+            <img src="../image/Mens/LBT.jpeg " class="card-img-top" alt="...">
+          </div>
        
-    </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex align-items-stretch mb-3">
+        <div class="card">
+          <div class="imgprod">
+            <img src="../image/Mens/PT.jpeg" class="card-img-top" alt="...">
+          </div>
+         
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex align-items-stretch mb-3">
+        <div class="card">
+          <div class="imgprod">
+            <img src="../image/Mens/PWT.jpeg" class="card-img-top" alt="...">
+          </div>
+          
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex align-items-stretch mb-3">
+        <div class="card">
+          <div class="imgprod">
+            <img src="../image/Mens/Wt.jpeg" class="card-img-top" alt="...">
+          </div>
+         
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div><!--end of row-->
+  </div><!--end of container-->
 </body>
 </html>

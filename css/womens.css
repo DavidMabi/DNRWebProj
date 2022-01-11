@@ -13,16 +13,12 @@ body {
     letter-spacing: 3px;
     font-family: "Poppins",sans-serif;
 }
-nav.stroke ul li a:hover{
-    border: solid;
-}
+
 .container-md span{
     letter-spacing: 10px;
     font-family: 'Poppins',sans-serif;
 }
-.card{
-    width: 300px;
-}
+
 .text{
     -webkit-user-select: none;
 }
@@ -32,6 +28,12 @@ nav.stroke ul li a:hover{
 .text p{
     font-family: "Oxygen",sans-serif;
     letter-spacing: 5px;
+}
+.imgprod{
+    height: 600px;
+}
+.imgprod .card-img-top{
+    height: 100%;
 }
 
 /*for the animation*/
