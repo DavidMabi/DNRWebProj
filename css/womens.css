@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -35,7 +35,19 @@ body {
 .imgprod .card-img-top{
     height: 100%;
 }
-
+#onhover {
+    display: none;
+    animation: transitionIn 2s ease;
+  }
+  #surround:hover span[id="initial"] {
+    display: none;
+    animation: transitionIn 1s;
+  }
+  #surround:hover span[id="onhover"] {
+    display: block;
+    animation: transitionIns 1s;
+  }
+  
 /*for the animation*/
 @keyframes transitionIn {
     from {
@@ -47,5 +59,6 @@ body {
         transform: translateY(0);
   }
 }
+
 
 

@@ -1,176 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">   
-    <link rel="stylesheet" href="../css/test.css">
-    
-    <title>DNR</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>Document</title>
 
-
-
-    <style>
-
-    </style>
+  <style>
+    #myDIV{
+      display: none;
+    }
+    #w3-container{
+          width: 500px;
+          height: 700px;
+          border: 1px solid;
+          margin-left: auto;
+          margin-right: auto;
+          display: none;
+        }
+  </style>
 </head>
 <body>
-    <!--Navbar-->
-  <nav class="navbar navbar-expand-md mt-1 border-bottom navbar-light " >
-    <div class="container-md" >
-      <a href="../html/main.html" class="navbar-brand justify-star col">
-      <span class=" fs-2 logo text-dark-danger">DNR</span>
-     </a>
-     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-     data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
-     aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-    </button>
-            <div class="collapse navbar-collapse justify-content-center col " id="main-nav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                   <a class="nav-link fs-4 text-dark " href="../html/main.html">Home</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link fs-4 text-dark border " href="../html/mens.html">Mens</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link fs-4 text-dark" href="../html/womens.html">Womens</a>
-                 </li>
-                <li class="nav-item ">
-                   <a class="nav-link fs-4 text-dark" href="#">Contact</a>
-                 </li>
-                 
+  <button onclick="myFunction()">Add to cart</button>
+  <div >
+          <p>Hello</p>
+  </div>
+
+
+  <div class="w3-container" id="myDIV">  
+    <div id="id01" class="w3-modal ">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+          <h1 class="text-center display-1 fs-1 mt-5">Log in to add to card</h1>
+          <form >
+                  
+            <h1 class="display-4 mt-5"> Log In</h1>
+            <div class="form-floating  floatingInput">
+                <input type="email" name="email" id="floatingInput" class="form-control " placeholder="Username or Email Address">
+                <label>Username or Email Address</label>
             </div>
-            <div class="collapse navbar-collapse justify-content-end col">
-              <a href="../html/login.html" class="text-white text-decoration-none"><button class="btn btn-primary ">Log in</button></a> &nbsp;
-              <a href="../html/SignUp.html" class="text-dark text-decoration-none"><button class="btn btn-outline-primary ">Sign In</button></a>
+            <div class="form-floating mt-3">
+                <input type="password" name="password" id="floatingPassword" class="form-control" placeholder="Password">
+                <label >Password</label>
             </div>
-            
+           <input type="checkbox" name="checkbox" id="checkbox1" class="mt-4"> See password <br>
+           <input type="submit" name="submit" id="btn" value="Log In" class="btn-primary w-100 btn-lg mt-3 ">
+        </form>
+        <hr class="mt-5" >
+        <p class="text-center lead">Would you like to <span><a href="../html/SignUp.html" class="text-primary" >Create an Account</a></span></p>
+        </div>
+      </div>
     </div>
-  </nav>
+  </div>
+
+
+
+
+
+
 
   
-  <div class="container mt-5"> <!--Start of container-->
-    <div class="mb-5 text  p-5"> 
-      <h1 class="display-1 text-center p-5 pb-1 ">Men's Wear</h1>
-      <p class="text-center fs-5">Men's most finest Clothing in the <span class="text-danger ">Market</span></p>
-    </div>
+  <script>
+  function myFunction() {
+    $('#closemodal').click(function() {
+    $('#modalwindow').modal('show');
+});
     
-    <div class="row row-cols-xl-3 row-cols-sm-2 row-cols-xl-2 row-cols-2">
-
-
-      <div class=" col mb-3">
-        <div class="card">
-          <div class="imgprod">
-            <img src="../image/Mens/BLT.jpeg" class="card-img-top" alt="BLT">
-          </div>
-          <div class="card-body border-top">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 d-flex align-items-stretch mb-3" >
-        <div class="card">
-          <div class="imgprod">
-            <img src="../image/Mens/BT.jpeg" class="card-img-top " alt="BT" class="img-responsive">
-          </div>
-          
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 d-flex align-items-stretch mb-3">
-        <div class="card">
-          <div class="imgprod">
-            <img src="../image/Mens/GT.jpeg" class="card-img-top" alt="GT">
-          </div>
-          
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 d-flex align-items-stretch mb-3">
-        <div class="card">
-          <div class="imgprod">
-            <img src="../image/Mens/DgT.jpeg" class="card-img-top" alt="...">
-          </div>
-         
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 d-flex align-items-stretch mb-3">
-        <div class="card">
-          <div class="imgprod">
-            <img src="../image/Mens/GT.jpeg" class="card-img-top" alt="...">
-          </div>
-          
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 d-flex align-items-stretch mb-3">
-        <div class="card">
-          <div class="imgprod">
-            <img src="../image/Mens/LBT.jpeg " class="card-img-top" alt="...">
-          </div>
-       
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 d-flex align-items-stretch mb-3">
-        <div class="card">
-          <div class="imgprod">
-            <img src="../image/Mens/PT.jpeg" class="card-img-top" alt="...">
-          </div>
-         
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 d-flex align-items-stretch mb-3">
-        <div class="card">
-          <div class="imgprod">
-            <img src="../image/Mens/PWT.jpeg" class="card-img-top" alt="...">
-          </div>
-          
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 d-flex align-items-stretch mb-3">
-        <div class="card">
-          <div class="imgprod">
-            <img src="../image/Mens/Wt.jpeg" class="card-img-top" alt="...">
-          </div>
-         
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-
-
-    </div><!--end of row-->
-  </div><!--end of container-->
+  }
+  </script>
 </body>
 </html>

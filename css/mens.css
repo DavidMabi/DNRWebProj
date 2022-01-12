@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -12,6 +12,7 @@ body {
 .nav-item .nav-link{
     letter-spacing: 3px;
     font-family: "Poppins",sans-serif;
+    
 }
 
 .container-md span{
@@ -45,7 +46,7 @@ body {
   }
   #surround:hover span[id="onhover"] {
     display: block;
-    animation: transitionIns;
+    animation: transitionIns 1s;
   }
 /*for the animation*/
 @keyframes transitionIn {
