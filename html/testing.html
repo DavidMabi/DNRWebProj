@@ -7,6 +7,31 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <style>
+    .modal-header .modal-title{
+      font-size: 50px;
+    }
+    .passwordInput{
+      margin-top: 25px;
+    }
+    .form{
+      margin-left: auto;
+      margin-right: auto;
+      
+      height: auto;
+    }
+    .form-control{
+      height: 64px;
+      border: none;
+      border-bottom: 1px solid;
+      border-radius: 0px;      
+      box-shadow: none;
+    }
+    .form-control:focus{
+      box-shadow: none;
+    }
+  </style>
 </head>
 <body>
 
@@ -14,7 +39,6 @@
   <h2>Modal Example</h2>
   <!-- Trigger the modal with a button -->
   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
@@ -23,20 +47,61 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
+          <h2 class="modal-title text-center ">Log in </h2>
         </div>
         <div class="modal-body">
-          <p>Some text in the modal.</p>
+            <div class="form">
+                  <form>
+                    <div class="emailInput">
+                      <input type="email" name="email" id="email" class="form-control" placeholder="Email Address">
+                    </div>
+                      <div class="passwordInput">
+                        <input type="password" name="password" id="password" class="form-control mt-5" placeholder="Password">    
+                      </div>
+                                     
+                  </form>
+            </div> 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+         
         </div>
       </div>
       
     </div>
   </div>
   
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center mx-auto">
+                <h3 class="display-1">To continue with the transaction you have to </h3>
+                <button class="btn btn-primary">Log in</button> <span class="fs-1">or</span> <button class="btn btn-outline-dark">Create Account</button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
 
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
